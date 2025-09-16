@@ -280,7 +280,7 @@ function formatTime(time) {
 
 // Volume control
 const volumeSlider = document.querySelector(".volume");
-audio.volume = 1; // mặc định 100%
+audio.volume = 1; 
 
 volumeSlider.addEventListener("input", (e) => {
     audio.volume = e.target.value;

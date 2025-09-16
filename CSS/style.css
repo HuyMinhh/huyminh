@@ -16,7 +16,7 @@ body {
     background-size: cover;
 }
 
-/* Particles Animation (vẫn giữ nếu bạn thích) */
+/* Particles Animation */
 .particles {
     position: absolute;
     top: 0;
@@ -172,7 +172,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* Social Links (nếu giữ lại) */
+/* Social Links */
 .social-links {
   display: flex;
   justify-content: center;
@@ -187,7 +187,7 @@ body {
 }
 
 .social-links a:hover {
-  color: #001aff; /* xanh Spotify hoặc đổi theo từng mạng */
+  color: #001aff;
 }
 
 
@@ -323,8 +323,8 @@ body {
     transform: scale(1.2);
     color: #ff66cc;
 }
-/* Kết thúc Music Player */
 
+/* Overlay */
 #overlay {
     position: fixed;
     top: 0; left: 0;
@@ -343,4 +343,3 @@ body {
     opacity: 0;
     pointer-events: none;
 }
-/* Kết thúc Profile Card */
