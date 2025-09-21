@@ -11,9 +11,9 @@ body {
     min-height: 100vh;
 
     /* GIF background sài link gif để sài cho background thay gì phải tải về */
-    /* background: url("https://moewalls.com/vehicle/bmw-m4-city-ride-live-wallpaper/' target='_blank'><img src='https://moewalls.com/wp-content/uploads/2023/05/bmw-m4-city-ride-thumb-728x410.jpg' title='BMW M4 City Ride Live Wallpaperhttps://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExemQ4MTN3ampzbWJldWFubnlxeWUwaXpnYTgwa3QwejFxbzQzdmFoNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3xoal3NeaZKX243CvH/giphy.gif")
+    background: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXJkZW15eDFhYWZlN3Mzbm9oY2RuYmg1bWRxa3R6bTRuM21oYWhzOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3xoal3NeaZKX243CvH/giphy.gif")
         no-repeat center center fixed;
-    background-size: cover; */
+    background-size: cover;
 }
 
 /* Particles Animation */
