@@ -1,15 +1,11 @@
-// ======================
 // DOM Elements cơ bản
-// ======================
 const particles = document.querySelectorAll('.particle');
 const avatar = document.querySelector('.avatar');
 const skillTags = document.querySelectorAll('.skill-tag');
 const contactBtn = document.querySelector('.contact-btn');
 const socialLinks = document.querySelectorAll('.social-link');
 
-// ======================
 // Music Player Elements
-// ======================
 const playBtn = document.querySelector(".play");
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
@@ -21,9 +17,7 @@ const durationEl = document.querySelector(".duration");
 
 let isPlaying = false;
 
-// ======================
 // Hiệu ứng mousemove cho particles
-// ======================
 document.addEventListener('mousemove', (e) => {
     const x = e.clientX / window.innerWidth;
     const y = e.clientY / window.innerHeight;
@@ -36,9 +30,8 @@ document.addEventListener('mousemove', (e) => {
     });
 });
 
-// ======================
 // Hiệu ứng click avatar
-// ======================
+
 if (avatar) {
     avatar.addEventListener('click', () => {
         avatar.style.animation = 'pulse 0.5s ease';
@@ -48,9 +41,7 @@ if (avatar) {
     });
 }
 
-// ======================
 // Hover cho skill tags
-// ======================
 skillTags.forEach(tag => {
     tag.addEventListener('mouseenter', () => {
         tag.style.background = 'rgba(255, 255, 255, 0.3)';
@@ -62,9 +53,7 @@ skillTags.forEach(tag => {
     });
 });
 
-// ======================
 // Hiệu ứng click contact button
-// ======================
 if (contactBtn) {
     contactBtn.addEventListener('click', () => {
         const ripple = document.createElement('span');
@@ -86,9 +75,7 @@ if (contactBtn) {
     });
 }
 
-// ======================
 // Function hiển thị thông báo
-// ======================
 function showNotification(message) {
     const notification = document.createElement('div');
     notification.textContent = message;
@@ -119,9 +106,8 @@ function showNotification(message) {
     }, 3000);
 }
 
-// ======================
+
 // Hover social links
-// ======================
 socialLinks.forEach(link => {
     link.addEventListener('mouseenter', () => {
         link.style.transform = 'translateY(-3px) rotate(5deg)';
@@ -135,9 +121,7 @@ socialLinks.forEach(link => {
     });
 });
 
-// ======================
 // Scroll animation cho profile-card
-// ======================
 function animateOnScroll() {
     const profileCard = document.querySelector('.profile-card');
     if (!profileCard) return;
@@ -149,9 +133,7 @@ function animateOnScroll() {
     }
 }
 
-// ======================
 // Animation ban đầu
-// ======================
 document.addEventListener('DOMContentLoaded', () => {
     const profileCard = document.querySelector('.profile-card');
     if (!profileCard) return;
@@ -164,9 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 300);
 });
 
-// ======================
 // Ripple CSS keyframes
-// ======================
 const style = document.createElement('style');
 style.textContent = `
     @keyframes ripple {
@@ -178,9 +158,8 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// ======================
 // Parallax scroll
-// ======================
+
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const parallax = document.querySelector('.background');
@@ -189,9 +168,8 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// ======================
+// 
 // Particles random
-// ======================
 function createRandomParticles() {
     const particleContainer = document.querySelector('.particles');
     if (!particleContainer) return;
@@ -209,9 +187,7 @@ function createRandomParticles() {
 }
 setInterval(createRandomParticles, 5000);
 
-// ======================
 // Keyboard accessibility
-// ======================
 if (avatar) {
     avatar.setAttribute('tabindex', '0');
     avatar.setAttribute('role', 'button');
@@ -226,9 +202,7 @@ skillTags.forEach((tag, index) => {
     tag.setAttribute('aria-label', `Skill: ${tag.textContent}`);
 });
 
-// ======================
 // MUSIC PLAYER FUNCTIONS
-// ======================
 
 // Play / Pause
 playBtn.addEventListener("click", () => {
@@ -300,8 +274,8 @@ window.addEventListener("load", () => {
 const overlay = document.getElementById("overlay");
 
 overlay.addEventListener("click", () => {
-    overlay.classList.add("hidden");  // Ẩn overlay
-    audio.play().then(() => {         // Bắt đầu phát nhạc
+    overlay.classList.add("hidden"); 
+    audio.play().then(() => {        
         playBtn.classList.replace("fa-play", "fa-pause");
         isPlaying = true;
     }).catch(err => {
@@ -309,12 +283,10 @@ overlay.addEventListener("click", () => {
     });
 });
 
-// ======================
 // Lặp lại bài hát khi hết
-// ======================
 audio.addEventListener("ended", () => {
-    audio.currentTime = 0; // tua về đầu
-    audio.play();          // phát lại
+    audio.currentTime = 0; 
+    audio.play();          
     playBtn.classList.replace("fa-play", "fa-pause");
     isPlaying = true;
 });

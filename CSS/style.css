@@ -10,13 +10,12 @@ body {
     overflow-x: hidden;
     min-height: 100vh;
 
-    /* GIF background sài link gif để sài cho background thay gì phải tải về */
+    /* GIF background */
     /* background: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXJkZW15eDFhYWZlN3Mzbm9oY2RuYmg1bWRxa3R6bTRuM21oYWhzOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3xoal3NeaZKX243CvH/giphy.gif")
         no-repeat center center fixed;
     background-size: cover; */
 }
 
-/* Particles Animation */
 .particles {
     position: absolute;
     top: 0;
@@ -351,6 +350,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Giữ tỉ lệ, phủ kín màn hình */
-  z-index: -2;       /* Cho xuống dưới cùng */
+  object-fit: cover; 
+  z-index: -2;      
 }
